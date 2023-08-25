@@ -1,0 +1,17 @@
+{
+  "name": "se-2",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "husky install",
+    "precommit": "lint-staged",
+    "vercel": "pnpm run --filter @se-2/nextjs vercel",
+    "prepare": "husky install"
+  },
+  "packageManager": "pnpm@8.6.12",
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.3"
+  }
+}
